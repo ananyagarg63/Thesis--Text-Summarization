@@ -57,3 +57,28 @@ def balance_dataset(labels, features, ratio=0.3):
         features = features[0]
 
     return labels, features
+
+import nltk.tokenize
+
+def word(sentence):
+    sentence = input("Enter text")
+    words = nltk.word_tokenize(sentence)
+    print(words)
+
+import nltk.tokenize
+
+def sentence(para):
+    para = input("Enter text")
+    sentences = nltk.sent_tokenize(para)
+    print(sentences)
+
+
+def vocab():
+    uniques = []
+    text = input("Enter text")
+    words[] = text.split(' ')
+    for each in words:
+        if each not in uniques:
+            uniques.append(each)
+    print(uniques)
+
