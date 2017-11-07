@@ -81,4 +81,19 @@ def vocab():
     print(uniques)
 
 
+def pairs():
+    uniques = []
+    text = input("Enter text")
+    words = text.split(' ')
+    for each in words:
+        if each not in uniques:
+            uniques.append(each)
+    print(uniques)
+
+    frequency = []
+    for i in words:
+        frequency.append(words.count(i))
+    print(list(zip(words, frequency)))
+
+
 
