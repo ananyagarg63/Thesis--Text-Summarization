@@ -65,5 +65,9 @@ def word(sentence):
     words = nltk.word_tokenize(sentence)
     print(words)
 
-
+def sentence(para):
+    para = input("Enter text")
+    sentences = nltk.sent_tokenize(para)
+    print(sentences)
+#return words
 
