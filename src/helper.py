@@ -69,5 +69,16 @@ def sentence(para):
     para = input("Enter text")
     sentences = nltk.sent_tokenize(para)
     print(sentences)
-#return words
+
+
+def vocab():
+    uniques = []
+    text = input("Enter text")
+    words[] = text.split(' ')
+    for each in words:
+        if each not in uniques:
+            uniques.append(each)
+    print(uniques)
+
+
 
