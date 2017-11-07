@@ -57,3 +57,13 @@ def balance_dataset(labels, features, ratio=0.3):
         features = features[0]
 
     return labels, features
+
+import nltk.tokenize
+
+def word(sentence):
+    sentence = input("Enter text")
+    words = nltk.word_tokenize(sentence)
+    print(words)
+
+
+
