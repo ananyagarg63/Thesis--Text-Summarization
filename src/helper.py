@@ -95,19 +95,20 @@ def pairs():
         frequency.append(words.count(i))
     print(list(zip(words, frequency)))
 
+
 uniques = []
 text = input("Enter text")
 words = text.split(' ')
 for each in words:
     if each not in uniques:
         uniques.append(each)
-print(uniques)
+print("Text: ", uniques)
 
-char_to_int = dict((c, i) for i, c in enumerate(words))
-print(char_to_int)
+sorted_uniques = sorted(list(set(uniques)))
+print("Sorted text: ", sorted_uniques)
 
-int_to_char = dict((i, c) for i, c in enumerate(words))
-print(int_to_char)
+char_to_int = dict((c, i) for i, c in enumerate(uniques))
+print("Words to Integer Mapping: ", char_to_int)
 
-
-
+int_to_char = dict((i, c) for i, c in enumerate(uniques))
+print("Integer to Words Mapping:", int_to_char)
